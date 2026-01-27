@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+.nazad{
+    border-radius: 3px;
+    padding: 19px 38px;
+    background: #f26689;
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-product {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.about-content {
+    display: flex;
+
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.intro-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.fichi {
+    list-style: none;
+}
+
+.fichi li {
+    font-size: 16px;
+    line-height: 1.8;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.fichi li:before {
+    content: "-";
+    color: #eca521;
+}
+
+.beton {
+    flex: 1;
+    position: relative;
+}
+
+.beton img {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    border-radius: 8px;
+}
+
+.arrow {
+    position: absolute;
+    background-color: #dedede;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ff9800;
+}
+
+.arrow-left {
+    right: 60px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.also-available {
+    padding: 60px 0;
+}
+
+.also-available h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.products-grid {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #dbdbdb;
+    display: flex;
+}
+
+
+.product-card {
+    background-color: #fff;
+    padding: 30px ;
+    border-radius: 8px;
+    margin: 5px;
+    margin-left: 10px;
+}
+
+.product-image {
+    margin-bottom: 20px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-info {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.zakaz {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
