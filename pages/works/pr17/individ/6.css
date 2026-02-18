@@ -1,34 +1,14 @@
-.ball {
-    background: #2db34a;
-    border-radius: 50%;
-    height: 50px;
-    position: absolute;
-    width: 50px;
-}
-
-
-@keyframes move {
-    0% {
-        transform:translate(0px,0px)
-    }
-    100% {
-        transform:translate(330px,-200px)
-    }   
-
-}
-.stage {
-    background: #eaeaed;
-    border-radius: 6px;
+.piter_jj img{
+    width: 150px;
     height: 150px;
-    position: relative;
-    min-width: 538px;
+    filter: blur(7px);
+    transition-property: filter;
+    transition-duration:2.5s ;
+    transition-timing-function: linear;
+
 }
-.stage:hover .ball {
-    animation-name: move;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-delay: .5s;
+.piter_jj img:hover{
+    filter: blur(0px);
+
 }
-figure {
-    margin: 0;
-}
+
