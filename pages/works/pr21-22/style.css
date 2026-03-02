@@ -1,4 +1,72 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Bold.ttf);
+}
 *{
+    font-family: Roboto;
     margin: 0px;
     padding: 0px;
+}
+.header{
+    color: #aa0094;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe8fc;
+}
+nav{
+    font-size: 14px;
+    padding: 20px;
+    display: flex;
+    gap: 90px;
+}
+
+.content{
+    width: 1064px;
+    margin: 0 auto;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+}
+
+.anime-gogno-title{
+    font-size: 16px;
+    margin-left: 50px;
+}
+.main-about-site{
+    width: 1064px;
+    height: 277px;
+    background: url('img/Rectangle 1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    color: white;
+    font-size: 23px;
+    margin-top: 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+.main-about-site h1{
+    position: relative;
+    top: 60px;
+    height: 50px;
+    margin: 50px;
+}
+.o-nas{
+    margin-top: 20px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap:60px
+}
+.o-nas-text{
+    color: #aa0094;
+    text-align: center;
+    align-items: center;
+}
+.o-nas-text h1{
+    
+    padding-bottom: 30px;
 }
