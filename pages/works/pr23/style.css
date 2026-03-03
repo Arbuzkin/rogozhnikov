@@ -1,0 +1,54 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(77, 130, 228);
+}
+header img{
+    padding: 20px;
+}
+header h1{
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+body{
+    background-color: lightgray;
+}
+.main{
+    max-width: 390px;
+    background-color: white;
+    color: rgb(147, 147, 147);
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(182, 182, 182);
+    box-shadow: 0 4px 5px;
+    text-align: center;
+}
+.need-text{
+    margin: 20px;
+}
+.sign-in-btn{
+    border-radius: 3px;
+    margin: 30px;
+    color: white;
+    background-color:rgb(77, 130, 228);
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.sign-in-btn img{
+    width: 50px;
+    height: 50px;
+}
+.sign-in-btn p{
+    font-size: 23px;
+    margin: 20px;
+}
