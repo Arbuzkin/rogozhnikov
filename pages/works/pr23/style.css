@@ -7,18 +7,21 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(77, 130, 228);
+    background-color: rgb(24, 119, 242);
 }
 header img{
+    width: 10%;
     padding: 20px;
+    border-left: 1px solid rgb(132, 175, 254);
 }
 header h1{
+    position: relative;
     color: white;
     text-align: center;
-    width: 100%;
+    left: 35%;
 }
 body{
-    background-color: lightgray;
+    background-color: rgb(227, 227, 227);
 }
 .main{
     max-width: 390px;
@@ -28,8 +31,9 @@ body{
     margin-top: 20px;
     border-radius: 5px;
     border: 1px solid rgb(182, 182, 182);
-    box-shadow: 0 4px 5px;
+    box-shadow: 0 1px 3px;
     text-align: center;
+    padding-bottom: 20px;
 }
 .need-text{
     margin: 20px;
@@ -38,10 +42,11 @@ body{
     border-radius: 3px;
     margin: 30px;
     color: white;
-    background-color:rgb(77, 130, 228);
+    background:linear-gradient(rgb(24, 119, 242),rgb(15, 93, 195));
     display: flex;
     align-items: center;
     text-align: center;
+    height: 67px;
 
 }
 .sign-in-btn img{
@@ -51,4 +56,50 @@ body{
 .sign-in-btn p{
     font-size: 23px;
     margin: 20px;
+}
+.line{
+    position: relative;
+    top: 21px;
+    align-items: center;
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+.or{
+    background-color: white;
+    margin-bottom: 10px;
+    border: 3px solid rgb(182, 182, 182);
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    position:relative;
+    left: 45%;
+}
+.or p{
+    padding-top: 8px;
+}
+.text{
+    margin: 30px;
+}
+.text-boxxx{
+    color: rgb(210, 210, 210);
+    text-align: left;
+    border: 1px solid rgb(182, 182, 182);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+}
+.text-boxxx p{
+    margin: 15px;
+}
+.log-me-btn{
+    color: white;
+    font-size: 27px;
+    background-color: rgb(112, 204, 19);
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 16px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.forget-btn{
+    color: rgb(210, 210, 210);
 }
