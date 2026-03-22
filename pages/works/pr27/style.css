@@ -2,38 +2,61 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
+    color: red;
 }
 .infograf{
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     
 }
 
+svg{
+    z-index: 1;
+    position: absolute;
+}
+
+.infograf-block{
+    z-index: 2;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+}
+
 .rectangle{
-    box-shadow: 0 5px 15px red;
     background-color: white;
     color: rgb(0, 0, 0);
-    align-items: center;
     display: flex;
     justify-content: center;
     width: 200px;
+    height: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.rectangle h2{
+    text-align: center;
+    width: 100%;
+}
+.rectangle img{
+    width: 100px;
     height: 100px;
-    border: 10px solid red;
 }
 .ellipse{
     box-shadow: 0 5px 15px red;
-    position: relative;
-    right: 30px;
-    top: 50px;
     background-color: white;
     align-items: center;
+    text-align: center;
     display: flex;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 175px;
+    height: 175px;
     border: 10px solid red;
     border-radius: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 .znak{
     margin: 15px;
@@ -41,6 +64,21 @@
     justify-content: center;
     width: 100%;
 }
-.infograf img{
-    width: 300px;
+.znak img{
+    width: 250px;
+}
+.green{
+    border: 10px solid rgb(68, 211, 46);
+}
+.orange{
+    border: 10px solid orange;
+}
+.red{
+        border: 10px solid rgb(232, 0, 0);
+}
+.nepon{
+        border: 10px solid rgb(211, 197, 46);
+}
+.brown{
+        border: 10px solid brown;
 }
