@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Городской портал - Муниципальные услуги</title>
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <h1 class="text-center text-white">Городской портал г.Бизарово</h1>
+        <div class="row">
+            <a href="#zakazi" class="btn btn-primary btn-lg text-uppercase">Перейти к услугам</a>
+        </div>
+    </div>
+    </header>
+    <section class="container">
+        <h1 class="text-center d-text">Таймеры</h1>
+        <div class="row text-center">
+            <h3 class="text-center d-text">До взрыва площади</h3>
+            <div class="row text-center">
+                <div class="col-3">
+                       <h3 id="days">00</h2>
+                    <p>Дней</p>
+                </div>
+                <div class="col-3">
+                    <h2 id="hours">00</h2>
+                    <p>Часов</p>
+                </div>
+                <div class="col-3">
+                    <h2 id="minutes">00</h2>
+                    <p>Минут</p>
+                   </div>
+                <div class="col-3">
+                    <h2 id="seconds">00</h2>
+                    <p>Секунд</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container"id="zakazi">
+        <h1 class="text-center">Услуги</h1>
+        <div class="d-flex justify-content-center">
+            <div class="btn-group m-5">
+                <button class="btn btn-outline-primary " data-bs-toggle="collapse" href="#smeshnoe">Смешные</button>
+                <button class="btn btn-outline-primary"data-bs-toggle="collapse" href="#nesmeshnoe">Не смешные</button>
+            </div>
+        </div>
+        <div class="collapse" id="smeshnoe">
+            <h4 class="text-center">Смешное</h4>
+                <div class="card m-5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Взорвать садик</h5>
+                        <p class="card-text">Взорвать садик имени Абдула. Взрыв происходит только при наборе определенного количества голосов</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vzor_sadik">
+                            Записать
+                        </button>
+                    </div>
+                </div>
+        </div>
+        <div class="collapse" id="nesmeshnoe">
+            <h4 class="text-center">Не смешное</h4>
+                            <div class="card m-5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Записать ребенка в школу</h5>
+                        <p class="card-text">Записать ребенка в школу можно по кнопке ниже в топовом модальном окне</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#zapis">
+                            Записать
+                        </button>
+                    </div>
+                </div>
+                <div class="card m-5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Отправить деньги на постройку новой площади</h5>
+                        <p class="card-text">Так как скоро в Городе Бизарово взорвется площадь, нам нужна будет новая</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#otprav_deneg">
+                            Записать
+                        </button>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+<div class="modal fade" id="zapis">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Записать ребенка в школу</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+      </div>
+      <div class="modal-body">
+        <label for="imya" class="form-label">Имя ребенка?</label>
+        <input type="text" class="form-control" id="imya" placeholder="Вася Васьков Васильев">
+        <label for="howold" class="form-label">Сколько лет?</label>
+        <input type="text" id="howold" class="form-control" placeholder="7">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Записать</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="vzor_sadik">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Отдать свой голос за взрыв садика в Городе Бизарово?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Нет</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Да</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="otprav_deneg">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Донат на новую площадь</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+      </div>
+      <div class="modal-body">
+        <label for="" class="form-label">Сколько дать денег? (в рублях)</label>
+        <input type="text" class="form-control" placeholder="1000р">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Нет</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <p class="text-center">Городской портал г.Бизарово</p>
+    <a href="../work.html">назад к работам</a>
+</footer>
+    
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    // Set the date we're counting down to (1 month from now)
+const countDownDate = new Date().getTime() + (30 * 24 * 60 * 60 * 1000);
+
+// Update the countdown every 1 second
+const x = setInterval(function() {
+  // Get today's date and time
+  const now = new Date().getTime();
+
+  // Find the distance between now and the countdown date
+  const distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result
+  document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+  document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+  document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+  document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+
+  // If the countdown is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("days").innerHTML = "00";
+    document.getElementById("hours").innerHTML = "00";
+    document.getElementById("minutes").innerHTML = "00";
+    document.getElementById("seconds").innerHTML = "00";
+  }
+}, 1000);
+</script>
+</body>
+</html>

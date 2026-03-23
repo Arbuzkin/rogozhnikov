@@ -1,0 +1,21 @@
+header,footer,section{
+    padding: 100px 0;
+}
+header{
+    background-color: #009dff;
+    padding:200px 0;
+}
+.btn{
+    margin: 0 auto;
+    max-width: 300px;
+}
+.d-text{
+    padding: 50px;
+}
+footer{
+    color: white;
+    background-color: #009dff;
+}
+footer a{
+    color: white;
+}

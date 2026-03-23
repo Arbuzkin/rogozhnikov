@@ -4,44 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Рогожников ньюс</title>
+    <title>Новости — Рогожников</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/news.css">
 </head>
 <body>
-    <header>
-        <h1 class="nav">
-          Персональный сайт Рогожникова Станислава</h1>
-          <ul class="nav">
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="personal.html">Личный кабинет</a></li>
-            <li><a href="works/work.html">Мои работы</a></li>
-          </ul>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1 class="site-title">Персональный сайт Рогожникова Станислава</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="news.html" class="active">Новости</a></li>
+                    <li><a href="personal.html">Личный кабинет</a></li>
+                    <li><a href="works/work.html">Мои работы</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <!--страница с новостями-->
-        <h2>Новости</h2>
-        <article>
-            <h3>новость 1</h3>
-            <p>Описание1<p>
-            <!--кнопка переадресация на страницу новости-->
-            <a href="new1.html">Подробнее</a>
-            <p>12.09</p>
-        </article>
-        <article>
-            <h3>новость 2</h3>
-            <p>Описание2</p>
-            <p>12.09</p>
-        </article>
-        <article>
-            <h3>Новость3</h3>
-            <p>Описание3</p>
-            <p>12.09</p>
-        </article>
+
+    <main class="news-main">
+
+        <section class="page-hero">
+            <h2 class="page-hero__title">Новости</h2>
+            <p class="page-hero__subtitle">Актуальные события и обновления</p>
+        </section>
+
+        <div class="filters">
+            <button class="filter-btn filter-btn--active" tabindex="0">Все</button>
+            <button class="filter-btn" tabindex="0">Технологии</button>
+            <button class="filter-btn" tabindex="0">Учёба</button>
+            <button class="filter-btn" tabindex="0">Проекты</button>
+        </div>
+
+        <section class="featured-news">
+            <article class="news-card news-card--featured">
+                <div class="news-card__badge">Главное</div>
+                <div class="news-card__content">
+                    <h3 class="news-card__title">Запуск нового веб-проекта на HTML и CSS</h3>
+                    <p class="news-card__text">
+                        Завершена разработка персонального сайта с применением современных технологий:
+                        CSS Grid, Flexbox, CSS-переменные и плавные анимации. Сайт полностью
+                        адаптивен и корректно отображается на всех устройствах.
+                    </p>
+                    <a href="new1.html" class="news-card__link">Читать далее →</a>
+                </div>
+                <div class="news-card__image-wrap">
+                    <div class="news-card__image news-card__image--featured"></div>
+                </div>
+            </article>
+        </section>
+
+        <section class="news-grid">
+
+            <article class="news-card">
+                <div class="news-card__image news-card__image--tech"></div>
+                <div class="news-card__content">
+                    <h3 class="news-card__title">Изучение CSS-анимаций</h3>
+                    <p class="news-card__text">Освоены keyframes, transitions и transform — теперь интерфейс оживает без JavaScript.</p>
+                    <a href="#" class="news-card__link">Читать →</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="news-card__image news-card__image--study"></div>
+                <div class="news-card__content">
+                    <h3 class="news-card__title">Сессия сдана на отлично</h3>
+                    <p class="news-card__text">Все экзамены пройдены успешно. Получен зачёт по веб-технологиям с высокой оценкой.</p>
+                    <a href="#" class="news-card__link">Читать →</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="news-card__image news-card__image--project"></div>
+                <div class="news-card__content">
+                    <h3 class="news-card__title">Работа №28 завершена</h3>
+                    <p class="news-card__text">Добавлена новая практическая работа с использованием Grid Layout и адаптивного дизайна.</p>
+                    <a href="works/pr28/index.html" class="news-card__link">Читать →</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="news-card__image news-card__image--tech"></div>
+                <div class="news-card__content">
+                    <h3 class="news-card__title">Освоен Flexbox</h3>
+                    <p class="news-card__text">Изучены все свойства Flexbox: justify-content, align-items, flex-wrap и другие.</p>
+                    <a href="#" class="news-card__link">Читать →</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="news-card__image news-card__image--study"></div>
+                <div class="news-card__content">
+                    <h3 class="news-card__title">Начало нового семестра</h3>
+                    <p class="news-card__text">Новый семестр стартовал. В планах — углублённое изучение JavaScript и работа с API.</p>
+                    <a href="#" class="news-card__link">Читать →</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="news-card__image news-card__image--project"></div>
+                <div class="news-card__content">
+                    <h3 class="news-card__title">Сайт опубликован в сети</h3>
+                    <p class="news-card__text">Персональный сайт размещён на хостинге. Теперь он доступен всем желающим онлайн.</p>
+                    <a href="#" class="news-card__link">Читать →</a>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="stats-section">
+            <h2 class="stats-section__title">Статистика сайта</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-card__number">28</span>
+                    <span class="stat-card__label">Работ выполнено</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card__number">6</span>
+                    <span class="stat-card__label">Новостей</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card__number">2</span>
+                    <span class="stat-card__label">Семестра</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-card__number">5</span>
+                    <span class="stat-card__label">Средний балл</span>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <!--копирайт-->
-        <p>©рогожников</p>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Рогожников Станислав. Все права защищены.</p>
     </footer>
 </body>
 </html>
