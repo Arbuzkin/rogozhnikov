@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeHub — чёрная тема</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white">
+
+
+    <header class="bg-gray-900 py-3 px-4 border-b border-gray-800 shadow-md">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold text-yellow-500">MEMCHOS</h1>
+            <nav class="space-x-4 text-sm">
+                <a href="../work.html" class="hover:text-yellow-400">Главная</a>
+                <a href="#memes" class="hover:text-yellow-400">Мемы</a>
+                <a href="#reviews" class="hover:text-yellow-400">Отзывы</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-8">
+
+        <section class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-2 text-yellow-500">Мемы</h2>
+            <p class="text-gray-400">Галлерея крутых мемов</p>
+        </section>
+        <section id="memes" class="mb-12">
+            <h2 class="text-2xl font-bold text-center mb-6 text-yellow-500">Твои мемы</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-gray-900 rounded-lg p-2 text-center border border-gray-800 shadow hover:shadow-2xl hover:size-15 transition">
+                    <img src="4.jpg" class="w-full h-auto rounded">
+                    <h3 class="font-semibold mt-2">Пепе</h3>
+                </div>
+                <div class="bg-gray-900 rounded-lg p-2 text-center border border-gray-800 shadow hover:shadow-2xl size-105 transition">
+                    <img src="3.jpg" class="w-full h-auto rounded">
+                    <h3 class="font-semibold mt-2">собака</h3>
+                </div>
+                <div class="bg-gray-900 rounded-lg p-2 text-center border border-gray-800 shadow hover:shadow-2xl hover:size-15 transition">
+                    <img src="2.jpg" class="w-full h-auto rounded">
+                    <h3 class="font-semibold mt-2">ГАМАдрiл</h3>
+                </div>
+                <div class="bg-gray-900 rounded-lg p-2 text-center border border-gray-800 shadow hover:shadow-2xl hover:size-15 transition">
+                    <img src="1.jpg" class="w-full h-auto rounded">
+                    <h3 class="font-semibold mt-2">Кот</h3>
+                </div>
+            </div>
+            <p class="text-center text-sm text-gray-500 mt-4">топовые меми...</p>
+        </section>
+
+        <section id="reviews" class="mb-12">
+            <h2 class="text-2xl font-bold text-center mb-6 text-yellow-500">Отзывы</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-gray-900 border-l-4 border-yellow-500 p-4 rounded shadow">
+                    <p class="italic text-sm text-gray-300">“воу воу воу”</p>
+                    <p class="font-bold mt-2 text-yellow-500">— Васян</p>
+                </div>
+                <div class="bg-gray-900 border-l-4 border-yellow-500 p-4 rounded shadow">
+                    <p class="italic text-sm text-gray-300">“бубуббубебебебеб”</p>
+                    <p class="font-bold mt-2 text-yellow-500">— Стасян</p>
+                </div>
+                <div class="bg-gray-900 border-l-4 border-yellow-500 p-4 rounded shadow">
+                    <p class="italic text-sm text-gray-300">“Крутяк мутяк тутяк”</p>
+                    <p class="font-bold mt-2 text-yellow-500">— Петросян</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-gray-900 p-6 rounded-lg text-center border border-gray-800 shadow mb-20">
+            <h3 class="text-xl font-bold mb-3 text-yellow-500">Мем-рассылка</h3>
+            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                <input type="email" placeholder="Твой email" class="bg-black border border-gray-700 rounded-full px-4 py-2 text-sm w-full sm:w-64 text-white placeholder-gray-500 focus:outline-none focus:border-yellow-500 focus:ring-1 focus:ring-yellow-500">
+                <button class="bg-yellow-500 text-black px-5 py-2 rounded-full text-sm font-bold shadow hover:bg-yellow-400 transition">Подписаться</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 py-4 px-4 text-center text-sm text-gray-500 mt-20">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <span>© MEMCHOS — твои мемчики</span>
+            <div class="space-x-3">
+                <span class="cursor-pointer hover:text-yellow-500">Twitter</span>
+                <span class="cursor-pointer hover:text-yellow-500">Telegram</span>
+                <span class="cursor-pointer hover:text-yellow-500">Discord</span>
+            </div>
+            <span>hello@MEMCHOS.com</span>
+        </div>
+    </footer>
+
+</body>
+</html>
